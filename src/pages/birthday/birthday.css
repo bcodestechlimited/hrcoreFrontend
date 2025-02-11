@@ -1,0 +1,27 @@
+.birthdayCard:nth-child(1n+0){
+    background-image: url('../../assets/skybluebirthday.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 248px;
+}
+.birthdayCard:nth-child(2n+0){
+    background-image: url('../../assets/pinkbirthday.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 248px;
+}
+.birthdayCard:nth-child(3n+0){
+    background-image: url('../../assets/blackbirthday.png');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 248px;
+}

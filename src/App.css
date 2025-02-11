@@ -1,0 +1,323 @@
+:root {
+  --main: #2a72a8;
+  --secondary: #f72585;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+}
+@font-face {
+  font-family: Segoe UI;
+  src: url("../src/assets/fonts/segoe.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("../src/assets/fonts/inter.ttf");
+}
+@font-face {
+  font-family: Manrope;
+  src: url("../src/assets/fonts/regular.otf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../src//assets/fonts/Poppins.otf");
+}
+@font-face {
+  font-family: Sansation;
+  src: url("../src/assets/fonts/Sansation_Regular.ttf");
+}
+@font-face {
+  font-family: Calibri;
+  src: url("./assets/fonts/calibril.ttf");
+}
+@font-face {
+  font-family: "Microsoft San Serif";
+  src: url("./assets/fonts/micross.ttf");
+}
+@font-face {
+  font-family: "Manrope", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+}
+@font-face {
+  font-family: "Albert Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+.albertSans {
+  font-family: Albert San;
+}
+
+.printOnly {
+  font-family: Calibri !important;
+}
+.sansation {
+  font-family: Sansation !important;
+}
+.nunito {
+  font-family: Nunito !important;
+}
+.segoe {
+  font-family: Segoe UI;
+}
+.inter {
+  font-family: Inter;
+}
+.manrope {
+  font-family: Manrope;
+}
+.btn p {
+  display: none;
+}
+.noborder,
+.noborder:focus {
+  border: none !important;
+}
+.btn:hover > p {
+  display: block;
+  -webkit-transition: 10s ease-out;
+  -moz-transition: 2s ease-out;
+  -o-transition: 2s ease-out;
+  transition: 2s ease-out;
+}
+/* .dtext {
+  display: hidden ;
+} */
+.poppins {
+  font-family: Poppins;
+}
+.manrope {
+  font-family: Manrope;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--secondary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}
+.noScroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.otp-code__input {
+  border-radius: 0.5rem;
+  font-family: monospace;
+  height: 50px;
+  border: 1px solid #ccc;
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  color: #222;
+  width: 3rem !important;
+  margin: 0 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug {
+  border: 2px solid red;
+}
+
+.file_upload {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+}
+.file_upload #file {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+.textTrunc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.textTrunc2 {
+  -webkit-line-clamp: 2;
+}
+.textTrunc3 {
+  -webkit-line-clamp: 3;
+}
+.textTrunc4 {
+  -webkit-line-clamp: 4;
+}
+.textTrunc5 {
+  -webkit-line-clamp: 5;
+}
+.textTrunc10 {
+  -webkit-line-clamp: 10;
+}
+.registerBg {
+  background: linear-gradient(
+      180deg,
+      rgba(25, 90, 218, 0.9) 0%,
+      rgba(6, 57, 96, 0.9) 100%
+    ),
+    url("./assets/signupbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.printPage * {
+  font-family: "Microsoft San Serif" !important;
+}
+@media print {
+  .borderNonePrint {
+    border: none !important;
+  }
+  .hidden.printOnly {
+    display: block !important;
+  }
+  .flex.printOnlyNone {
+    display: none !important;
+  }
+  .text2Print {
+    font-size: 20px !important;
+  }
+  body {
+    font-size: 12px;
+  }
+  .page-break {
+    /* margin-top: 1rem; */
+    /* display: block; */
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
+  .receiptPrint {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: block; */
+    position: relative;
+  }
+
+  .receiptPrint::after {
+    content: "";
+    background: url("../src/assets/ICS\ Logo\ FA.png");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    /* z-index: -1;    */
+  }
+
+  .receiptPrint3 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: block; */
+    position: relative;
+  }
+
+  .receiptPrint3::after {
+    content: "";
+    background: url("../src/assets/Cephas.png");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    /* z-index: -1;    */
+  }
+
+  .receiptPrint2 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* display: block; */
+    position: relative;
+  }
+
+  .receiptPrint2::after {
+    content: "";
+    background: url("../src/assets/CCI-Logo.png");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    /* z-index: -1;    */
+  }
+}
+@page {
+  size: auto;
+  margin: 5mm 0;
+}
+
+/* Buttons */
+
+.bn53 {
+  border: 0.5px solid #d0d3d9;
+  box-shadow: #222;
+
+  padding: 7px;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: bn53bounce 4s infinite;
+  cursor: pointer;
+}
+
+@keyframes bn53bounce {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}

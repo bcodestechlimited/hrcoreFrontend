@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="ICS Logo FA.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="HR CORE"
+    />
+    <link rel="apple-touch-icon" href="ICS Logo FA.png" />
+
+    <title>HR CORE</title>
+    <style>
+      .preloader {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				z-index: 999999999 !important;
+				background: #000;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			.preloader .lds-ellipsis {
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.spinner {
+				--t: 2500ms;
+				--animation: rotate var(--t) linear infinite;
+				--animation2: scale var(--t) linear infinite alternate;
+				position: relative;
+				width: 10rem;
+				height: 10rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				animation: var(--animation), var(--animation2);
+			}
+
+			.spinner::before,
+			.spinner::after {
+				content: '';
+				position: absolute;
+			}
+
+			.spinner::before {
+				inset: 0;
+				border: 3px solid #2A72A8;
+				border-radius: 50%;
+				mask-image: conic-gradient(transparent 10%, black);
+				animation: borderScale var(--t) linear infinite alternate;
+			}
+
+			.spinner::after {
+				--r: 45deg;
+				--scale: 2;
+				width: 20%;
+				height: 20%;
+				background: 
+					radial-gradient(circle at 30% 35%, white 3px, transparent 0),
+					radial-gradient(circle at 70% 35%, white 3px, transparent 0),
+					radial-gradient(circle at top center, white 6px, transparent 0),
+					#F72585;
+				background-position: 0 0, 0 0, 0 1.25rem;
+				top: 0;
+				translate: 0 -50%;
+				rotate: 45deg;
+				animation: var(--animation) reverse, var(--animation2);
+				border-radius: 20%;
+			}
+
+			@keyframes rotate {
+				to {
+					rotate: calc(360deg + var(--r, 0deg));
+				}
+			}
+
+			@keyframes scale {
+				to {
+					scale: var(--scale, 0.5);
+				}
+			}
+
+			@keyframes borderScale {
+				to {
+					border: 6px solid #F72585;
+				}
+			}
+    </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  </head> 
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="preloader preloader-dark">
+			<div class="lds-ellipsis">
+				<div class="spinner"></div>
+			</div>
+		</div>
+    <div id="root"></div>
+  </body>
+</html>
