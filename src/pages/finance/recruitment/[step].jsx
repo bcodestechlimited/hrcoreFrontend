@@ -720,8 +720,10 @@ export const TableBottom = ({ accountDetails, state, Arr1, paymentFavour }) => {
 
       {state?.template === "fleet" && (
         <div>
-          <h2>Terms for Short Service</h2>
-          <ol>
+          <h2 className="text-sm text-black manrope capitalize underline font-bold py-3">
+            Terms for Short Service
+          </h2>
+          <ol className="list-disc pl-4 font-medium">
             <li>Overtime charge of ₦20,000 per hour applies from 7 PM.</li>
             <li>Full payment is required before vehicle deployment.</li>
             <li>Drivers can decline routes that may damage the vehicle.</li>
