@@ -13,6 +13,8 @@ import { TOKEN, loadUser } from "./data/Reducers/UserReducer";
 // import { SetAuthToken } from "./data/Config";
 
 const Routers = () => {
+  console.log("Hereee");
+
   const { auth, error, company } = useSelector((state) => state),
     dispatch = useDispatch();
 
