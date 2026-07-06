@@ -141,8 +141,7 @@ const Invoice = () => {
 	const endOffset = itemOffset + range;
 
 	if (!invoice?.data && !data) return <PageLoader />;
-	if (!data) return;
-
+	if (!data) return;	
 	const currentItems = data?.docs?.slice(itemOffset, endOffset);
 	const pageCount = Math.ceil(data?.docs?.length / range);
 
