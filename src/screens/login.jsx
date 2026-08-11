@@ -403,7 +403,7 @@ const Login = () => {
                   title="sign in"
                   buttonType="primary"
                   width="w-36"
-                  style="h-14 mt-3 bg-secondary text-white text-sm font-semibold poppins rounded-lg capitalize text-center justify-center"
+                  // style="h-14 mt-3 bg-secondary text-white text-sm font-semibold poppins rounded-lg capitalize text-center justify-center"
                   loading={loading}
                   type="submit"
                 />

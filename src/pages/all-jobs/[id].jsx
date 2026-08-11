@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { AiFillEye, AiOutlineRight } from "react-icons/ai";
+import { AiOutlineRight } from "react-icons/ai";
 // import Addbutton from "../../../../ components/button/addbutton";
 import Addbutton from "../../components/button/addbutton";
 
 import { Link, useNavigate } from "react-router-dom";
-import AllJobCard from "../../components/recruitment/all_job_card";
-import { MainRanger } from "../../components/pagination/pagination";
-import FormName from "../../components/form-name/form-name";
-import Option from "../../components/oprion/option";
+// import AllJobCard from "../../components/recruitment/all_job_card";
+// import { MainRanger } from "../../components/pagination/pagination";
+// import FormName from "../../components/form-name/form-name";
+// import Option from "../../components/oprion/option";
 import { IconContext } from "react-icons";
 // import Recruitment_Stage_Head from "../../components/alljobs/stage-head";
 // import Recruitment_Stage_Body from "../../components/alljobs/stage-body";

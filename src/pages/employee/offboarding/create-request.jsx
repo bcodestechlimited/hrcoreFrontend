@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { manageResignation } from "../../../data/Reducers/ResignationReducer";
 import { useNavigate } from "react-router-dom";
 import Input from "../../../components/input/input";
-import moment from "moment";
+// import moment from "moment";
 import Button from "../../../components/button/button";
 import { toast } from "react-toastify";
 import { PreviewCancelRequest } from "./[step]";
@@ -79,20 +79,20 @@ const CreateRequest = () => {
     setSubmit(true);
   };
 
-  let handleChangeImage = (name) => (e) => {
-    const file = e.target.files[0];
-    let err = "";
+  // let handleChangeImage = (name) => (e) => {
+  //   const file = e.target.files[0];
+  //   let err = "";
 
-    if (!file) return (err = `File, ${file?.name} does not exist`);
-    if (!file.type.includes("image"))
-      return (err = `File, ${file?.name} format not supported`);
+  //   if (!file) return (err = `File, ${file?.name} does not exist`);
+  //   if (!file.type.includes("image"))
+  //     return (err = `File, ${file?.name} format not supported`);
 
-    if (err) {
-      return toast.error(err);
-    } else {
-      setState({ ...state, [name]: file });
-    }
-  };
+  //   if (err) {
+  //     return toast.error(err);
+  //   } else {
+  //     setState({ ...state, [name]: file });
+  //   }
+  // };
 
   let reset = () => {
     setSubmit(false);

@@ -7,9 +7,9 @@ import Done from "./Done";
 
 const SuppliersTable = () => {
   const [addItem, setAddItem] = useState(false);
-  const [addFilters, setAddFilters] = useState(false);
-  const [isDownload, setIsDownload] = useState(false);
-  const [policy, setPolicy] = useState(false);
+  // const [addFilters, setAddFilters] = useState(false);
+  // const [isDownload, setIsDownload] = useState(false);
+  // const [policy, setPolicy] = useState(false);
   const [addSupplier, setAddSupplier] = useState(false);
   const [isCategoryLists, setIsCategoryLists] = useState(false);
 
@@ -24,24 +24,24 @@ const SuppliersTable = () => {
     setAddItem(false);
   };
 
-  const handleCloseCard = () => {
-    setAddSupplier(false);
-  };
+  // const handleCloseCard = () => {
+  //   setAddSupplier(false);
+  // };
   const handleSupplier = () => {
     setAddSupplier(!addSupplier);
   };
 
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
 
-  const handlePolicy = () => {
-    setPolicy(!policy);
-  };
+  // const handlePolicy = () => {
+  //   setPolicy(!policy);
+  // };
 
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  // const [isSuccessful, setIsSuccessful] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
   const [category, setCategory] = useState(false);
   const [isDone, setIsDone] = useState(false);

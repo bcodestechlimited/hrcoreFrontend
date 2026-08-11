@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const CustomerCard = () => {
   const [addOrder, setAddOrder] = useState(false);
   const [addFilters, setAddFilters] = useState(false);
-  const [isDownload, setIsDownload] = useState(false);
+  // const [isDownload, setIsDownload] = useState(false);
   const [policy, setPolicy] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
 
@@ -22,18 +22,18 @@ const CustomerCard = () => {
   const handleAddFilters = () => {
     setAddFilters(!addFilters);
   };
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
-  const closeHandleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
+  // const closeHandleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
   const handlePolicy = () => {
     setPolicy(!policy);
   };
-  const closehandlePolicy = () => {
-    setPolicy(false);
-  };
+  // const closehandlePolicy = () => {
+  //   setPolicy(false);
+  // };
 
   return (
     <div>

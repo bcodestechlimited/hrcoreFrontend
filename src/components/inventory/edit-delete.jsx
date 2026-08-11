@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const EditDelete = () => {
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  // const [isSuccessful, setIsSuccessful] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
   const [category, setCategory] = useState(false);
   const [isDone, setIsDone] = useState(false);
@@ -35,9 +35,9 @@ const EditDelete = () => {
     window.scrollTo(0, 0);
     setIsDelete(!isDelete);
   };
-  const handleSuccessful = () => {
-    setIsSuccessful(!isSuccessful);
-  };
+  // const handleSuccessful = () => {
+  //   setIsSuccessful(!isSuccessful);
+  // };
   const closehandleEdit = () => {
     setIsEdit(false);
   };

@@ -1,7 +1,7 @@
 import React from "react";
-import SearchItems from "../../../components/inventory/search-items";
+// import SearchItems from "../../../components/inventory/search-items";
 import InventoryHeader from "../../../components/inventory/InventoryHeader";
-import ServicesTable from "../../../components/inventory/services-table";
+// import ServicesTable from "../../../components/inventory/services-table";
 import { Link } from "react-router-dom";
 
 const Services = () => {

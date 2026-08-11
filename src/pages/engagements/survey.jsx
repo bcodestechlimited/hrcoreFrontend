@@ -10,7 +10,7 @@ import Input from "../../components/input/input";
 
 const Survey = () => {
   const [pool, setPool] = useState(false);
-  const [post, setPost] = useState(false);
+  // const [post, setPost] = useState(false);
   const [targetGroup, setTargetGroup] = useState(false);
   const [privilege, setPrivilege] = useState(false);
 

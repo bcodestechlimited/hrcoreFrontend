@@ -1,50 +1,50 @@
-import React, { useState } from "react";
-import Edit from "../../assets/Edit.png";
-import Delete from "../../assets/Delete.png";
+// import React, { useState } from "react";
+// import Edit from "../../assets/Edit.png";
+// import Delete from "../../assets/Delete.png";
 import { Link } from "react-router-dom";
 
 const ViewItemsSold = () => {
-  const [isEdit, setIsEdit] = useState(false);
-  const [isDelete, setIsDelete] = useState(false);
+  // const [isEdit, setIsEdit] = useState(false);
+  // const [isDelete, setIsDelete] = useState(false);
 
-  const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
-  const [category, setCategory] = useState(false);
-  const [isDone, setIsDone] = useState(false);
+  // const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
+  // const [category, setCategory] = useState(false);
+  // const [isDone, setIsDone] = useState(false);
 
-  const handleDeletedSuccessfully = () => {
-    setIsDeletedSuccessfully(!isDeletedSuccessfully);
-  };
-  const closehandleDeletedSuccessfully = () => {
-    setIsDeletedSuccessfully(false);
-  };
+  // const handleDeletedSuccessfully = () => {
+  //   setIsDeletedSuccessfully(!isDeletedSuccessfully);
+  // };
+  // const closehandleDeletedSuccessfully = () => {
+  //   setIsDeletedSuccessfully(false);
+  // };
 
-  const handleCategory = () => {
-    setCategory(!category);
-  };
+  // const handleCategory = () => {
+  //   setCategory(!category);
+  // };
 
-  const handleIsDone = () => {
-    setIsDone(!isDone);
-  };
+  // const handleIsDone = () => {
+  //   setIsDone(!isDone);
+  // };
 
-  const closehandleIsDone = () => {
-    setIsDone(false);
-  };
+  // const closehandleIsDone = () => {
+  //   setIsDone(false);
+  // };
 
-  const handleEdit = () => {
-    window.scrollTo(0, 0);
-    setIsEdit(!isEdit);
-  };
-  const handleDelete = () => {
-    window.scrollTo(0, 0);
-    setIsDelete(!isDelete);
-  };
+  // const handleEdit = () => {
+  //   window.scrollTo(0, 0);
+  //   setIsEdit(!isEdit);
+  // };
+  // const handleDelete = () => {
+  //   window.scrollTo(0, 0);
+  //   setIsDelete(!isDelete);
+  // };
 
-  const closehandleEdit = () => {
-    setIsEdit(false);
-  };
-  const closehandleDelete = () => {
-    setIsDelete(false);
-  };
+  // const closehandleEdit = () => {
+  //   setIsEdit(false);
+  // };
+  // const closehandleDelete = () => {
+  //   setIsDelete(false);
+  // };
 
   const tableHead = [
       "Items",

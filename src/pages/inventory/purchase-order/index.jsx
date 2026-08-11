@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import InventoryHeader from "../../../components/inventory/InventoryHeader";
 import RecentActivity from "../../../components/inventory/recent-activity";
 import PurchaseOrdersTable from "../../../components/inventory/purchase-orders-table";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import OrderCard from "../../../components/inventory/OrderCard";
 
 const PurchaseOrder = () => {
-  const [addOrder, setAddOrder] = useState(false);
-  const [isCategory, setIsCategory] = useState(false);
+  const [addOrder] = useState(false);
+  // const [isCategory, setIsCategory] = useState(false);
   const [isExpenses, setIsExpenses] = useState(false);
 
   const handleisExpenses = () => {
     setIsExpenses(!isExpenses);
   };
-  const handleIsCategory = () => {
-    setIsCategory(!isCategory);
-  };
+  // const handleIsCategory = () => {
+  //   setIsCategory(!isCategory);
+  // };
 
-  const handleAddOrder = () => {
-    setAddOrder(!addOrder);
-  };
-  const closehandleAddOrder = () => {
-    setAddOrder(false);
-  };
+  // const handleAddOrder = () => {
+  //   setAddOrder(!addOrder);
+  // };
+  // const closehandleAddOrder = () => {
+  //   setAddOrder(false);
+  // };
   return (
     <div className="bg-[#F0F1F3]">
       <InventoryHeader />
@@ -62,7 +62,7 @@ const PurchaseOrder = () => {
                 )}
                 <div className=" flex justify-end items-center py-5">
                   <div
-                    onClick={handleAddOrder}
+                    // onClick={handleAddOrder}
                     className=" w-[118px] h-[37px] rounded-md cursor-pointer hover:bg-blue-600 bg-[#04B4FC] text-white manrope flex items-center justify-center gap-3"
                   >
                     <img

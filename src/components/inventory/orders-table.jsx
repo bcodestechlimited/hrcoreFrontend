@@ -7,8 +7,8 @@ import Done from "./Done";
 
 const OrdersTable = () => {
   const [addItem, setAddItem] = useState(false);
-  const [addFilters, setAddFilters] = useState(false);
-  const [isDownload, setIsDownload] = useState(false);
+  // const [addFilters, setAddFilters] = useState(false);
+  const [isDownload] = useState(false);
   const [policy, setPolicy] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
   const [addOrder, setAddOrder] = useState(false);
@@ -32,9 +32,9 @@ const OrdersTable = () => {
     setAddItem(false);
   };
 
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
 
   const handlePolicy = () => {
     setPolicy(!policy);
@@ -42,7 +42,7 @@ const OrdersTable = () => {
 
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  // const [isSuccessful, setIsSuccessful] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
   const [category, setCategory] = useState(false);
   const [isDone, setIsDone] = useState(false);

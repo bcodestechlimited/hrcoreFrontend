@@ -42,7 +42,7 @@ const ServicesTable = () => {
 
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  // const [isSuccessful, setIsSuccessful] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
 
   const handleDeletedSuccessfully = () => {
