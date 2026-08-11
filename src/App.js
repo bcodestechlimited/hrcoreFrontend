@@ -83,9 +83,9 @@ const App = () => {
   return (
     <div className="discontinued-page">
       <div className="discontinued-card">
-        <div className="discontinued-logo">
+        {/* <div className="discontinued-logo">
           <img src={Logo} alt="Company Logo" />
-        </div>
+        </div>*/}
 
         <div className="discontinued-icon">
           <svg
