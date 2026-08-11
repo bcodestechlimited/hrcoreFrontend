@@ -1,27 +1,27 @@
 import React, { useState } from "react";
 
 const Download = () => {
-  const [isDownload, setIsDownload] = useState(false);
+  const [isDownload] = useState(false);
   const [isDone, setIsDone] = useState(false);
-  const [service, setService] = useState(false);
-  const [activeButton, setActiveButton] = useState("overview");
+  // const [service, setService] = useState(false);
+  // const [activeButton, setActiveButton] = useState("overview");
 
-  const handleButtonClick = (button) => {
-    setActiveButton(button);
-  };
+  // const handleButtonClick = (button) => {
+  //   setActiveButton(button);
+  // };
 
-  const handleService = () => {
-    setService(!service);
-  };
-  const closehandleService = () => {
-    setService(false);
-  };
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
-  const closehandleIsDownload = () => {
-    setIsDownload(false);
-  };
+  // const handleService = () => {
+  //   setService(!service);
+  // };
+  // const closehandleService = () => {
+  //   setService(false);
+  // };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
+  // const closehandleIsDownload = () => {
+  //   setIsDownload(false);
+  // };
   const handleIsDone = () => {
     setIsDone(!isDone);
   };
@@ -31,7 +31,7 @@ const Download = () => {
   return (
     <div className=" ">
       <button
-        onClick={handleIsDownload}
+        // onClick={handleIsDownload}
         className="bn53 flex items-center justify-center  bg-[#04B4FC] text-white hover:border-[#1366D9]  hover:text-[#1366D9] cursor-pointer w-[118px] h-[40px] rounded-md"
       >
         <p className=" text-[14px] inter "> Download</p>

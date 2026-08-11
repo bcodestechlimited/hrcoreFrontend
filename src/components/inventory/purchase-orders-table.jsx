@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Edit from "../../assets/Edit.png";
-import Delete from "../../assets/Delete.png";
+// import Edit from "../../assets/Edit.png";
+// import Delete from "../../assets/Delete.png";
 import { Link } from "react-router-dom";
 import OrderCard from "./OrderCard";
 
@@ -8,7 +8,6 @@ const PurchaseOrdersTable = () => {
   const [isEdit, setIsEdit] = useState(false);
   const [addDelete, setAddDelete] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
-  const [isDelete, setIsDelete] = useState(false);
 
   const handleDeletedSuccessfully = () => {
     window.scroll(0, 0);
@@ -18,9 +17,9 @@ const PurchaseOrdersTable = () => {
     setIsDeletedSuccessfully(false);
   };
 
-  const closehandleDelete = () => {
-    setIsDelete(false);
-  };
+  // const closehandleDelete = () => {
+  //   setIsDelete(false);
+  // };
 
   const handleEdit = () => {
     window.scroll(0, 0);
@@ -176,7 +175,7 @@ const PurchaseOrdersTable = () => {
                 </p>
                 <div className=" flex items-center justify-center gap-5">
                   <button
-                    onClick={closehandleDelete}
+                    // onClick={closehandleDelete}
                     className=" w-[110px] h-[35px] bg-[#1D48E1] text-white rounded-md inter text-[16px]"
                   >
                     No

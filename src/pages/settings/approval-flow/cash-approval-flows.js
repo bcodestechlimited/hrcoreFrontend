@@ -1,15 +1,15 @@
 import { useState } from "react";
 
-import { useNavigate, Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
-import { SlOptionsVertical } from "react-icons/sl";
+// import { SlOptionsVertical } from "react-icons/sl";
 import { BiFilterAlt } from "react-icons/bi";
 import { BsArrowDown, BsFillPlusSquareFill } from "react-icons/bs";
 
-import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
-import Manage_settings_tab from "../../../components/settings/manage_settings/manage_settings_tab";
+// import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
+// import Manage_settings_tab from "../../../components/settings/manage_settings/manage_settings_tab";
 import Search from "../../../components/search/search";
-import Option from "../../../components/oprion/option";
+// import Option from "../../../components/oprion/option";
 import Pagination from "../../../components/pagination/pagination";
 import ModalContainer from "../../../components/modal-container/modal-container";
 import Input from "../../../components/input/input";
@@ -17,63 +17,63 @@ import Button from "../../../components/button/button";
 import DropDown from "../../../components/dropdown/dropdown";
 import { IconContext } from "react-icons";
 import ApprovalFlowTab from "../../../components/settings/approval_flow_component/approval-flow-tab";
-import Setting_table from "../../../components/settings/setting_table";
+// import Setting_table from "../../../components/settings/setting_table";
 import Addbutton from "../../../components/button/addbutton";
 
 const CashApprovalFlows = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const header = [
-    {
-      id: 1,
-      name: "S/N",
-      case: "number_count",
-    },
-    {
-      id: 2,
-      name: "CASH CATEGORY",
-      case: "CashApprovalFlows_CASH_CATEGORY",
-    },
-    {
-      id: 3,
-      name: "APPROVERS",
-      case: "CashApprovalFlows_CASH_CATEGORY",
-    },
+  // const header = [
+  //   {
+  //     id: 1,
+  //     name: "S/N",
+  //     case: "number_count",
+  //   },
+  //   {
+  //     id: 2,
+  //     name: "CASH CATEGORY",
+  //     case: "CashApprovalFlows_CASH_CATEGORY",
+  //   },
+  //   {
+  //     id: 3,
+  //     name: "APPROVERS",
+  //     case: "CashApprovalFlows_CASH_CATEGORY",
+  //   },
 
-    {
-      id: 4,
-      name: "AMOUNT",
-      case: "CashApprovalFlows_CASH_CATEGORY",
-    },
+  //   {
+  //     id: 4,
+  //     name: "AMOUNT",
+  //     case: "CashApprovalFlows_CASH_CATEGORY",
+  //   },
 
-    {
-      id: 5,
-      name: "REASON	ACTION",
-      case: "CashApprovalFlows_CASH_CATEGORY",
-    },
+  //   {
+  //     id: 5,
+  //     name: "REASON	ACTION",
+  //     case: "CashApprovalFlows_CASH_CATEGORY",
+  //   },
 
-    {
-      id: 5,
-      name: "REASON",
-      case: "CashApprovalFlows_CASH_CATEGORY",
-    },
+  //   {
+  //     id: 5,
+  //     name: "REASON",
+  //     case: "CashApprovalFlows_CASH_CATEGORY",
+  //   },
 
-    {
-      id: 5,
-      name: "ACTION",
-      case: "ACTION",
+  //   {
+  //     id: 5,
+  //     name: "ACTION",
+  //     case: "ACTION",
 
-      // name: "EditResetPasswordEnableDisable",
-    },
-  ];
+  //     // name: "EditResetPasswordEnableDisable",
+  //   },
+  // ];
 
-  const dataTable = [
-    { id: 1, name: "Alice", age: 30, city: "New York" },
-    { id: 2, name: "Bob", age: 25, city: "Los Angeles" },
-    { id: 3, name: "Charlie", age: 28, city: "Chicago" },
-    { id: 4, name: "David", age: 35, city: "Houston" },
-    { id: 5, name: "Eve", age: 22, city: "Miami" },
-  ];
+  // const dataTable = [
+  //   { id: 1, name: "Alice", age: 30, city: "New York" },
+  //   { id: 2, name: "Bob", age: 25, city: "Los Angeles" },
+  //   { id: 3, name: "Charlie", age: 28, city: "Chicago" },
+  //   { id: 4, name: "David", age: 35, city: "Houston" },
+  //   { id: 5, name: "Eve", age: 22, city: "Miami" },
+  // ];
 
   const [createLeave, setCreateLeave] = useState(false);
   const toggleCreateLeave = () => {
@@ -105,7 +105,7 @@ const CashApprovalFlows = () => {
           </div>
         </div>
         <div className="relative overflow-x-auto overflow-y-visible min-h-screen">
-          <Setting_table data={dataTable} header={header} />
+          {/* <Setting_table data={dataTable} header={header} />*/}
         </div>
       </div>
       <div className="mt-4 flex justify-center">

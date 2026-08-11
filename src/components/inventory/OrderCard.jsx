@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const OrderCard = () => {
-  const [addOrder, setAddOrder] = useState(false);
+  // const [addOrder, setAddOrder] = useState(false);
   const [isCategory, setIsCategory] = useState(false);
 
   const handleIsCategory = () => {
     setIsCategory(!isCategory);
   };
 
-  const handleAddOrder = () => {
-    setAddOrder(!addOrder);
-  };
-  const closehandleAddOrder = () => {
-    setAddOrder(false);
-  };
+  // const handleAddOrder = () => {
+  //   setAddOrder(!addOrder);
+  // };
+  // const closehandleAddOrder = () => {
+  //   setAddOrder(false);
+  // };
   return (
     <div>
       <div className="  absolute top-0 left-0 bottom-0 right-0 z-30  bg-black bg-opacity-60 lg:pl-14 justify-center grid items-center">

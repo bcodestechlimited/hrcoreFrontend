@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import InventoryHeader from "../../../components/inventory/InventoryHeader";
 import SearchItems from "../../../components/inventory/search-items";
 
 import { useNavigate } from "react-router-dom";
 
 const Order = () => {
-  const [addOrder, setAddOrder] = useState(false);
-  const [isCategory, setIsCategory] = useState(false);
+  // const [addOrder, setAddOrder] = useState(false);
+  // const [isCategory, setIsCategory] = useState(false);
 
-  const handleIsCategory = () => {
-    setIsCategory(!isCategory);
-  };
+  // const handleIsCategory = () => {
+  //   setIsCategory(!isCategory);
+  // };
 
-  const handleAddOrder = () => {
-    setAddOrder(!addOrder);
-  };
-  const closehandleAddOrder = () => {
-    setAddOrder(false);
-  };
+  // const handleAddOrder = () => {
+  //   setAddOrder(!addOrder);
+  // };
+  // const closehandleAddOrder = () => {
+  //   setAddOrder(false);
+  // };
 
   const navigate = useNavigate();
 

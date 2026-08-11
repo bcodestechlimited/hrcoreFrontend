@@ -1,11 +1,11 @@
 import "./App.css";
 import $ from "jquery";
 import "react-toastify/dist/ReactToastify.css";
-import { Provider } from "react-redux";
-import DataProvider from "./data/Context";
-import store from "./data/Store";
-import { BrowserRouter as Router } from "react-router-dom";
-import Routers from "./Routes";
+// import { Provider } from "react-redux";
+// import DataProvider from "./data/Context";
+// import store from "./data/Store";
+// import { BrowserRouter as Router } from "react-router-dom";
+// import Routers from "./Routes";
 // import { useEffect } from "react";
 import { TOKEN, TOKEN_ID } from "./data/Reducers/UserReducer";
 import {
@@ -142,15 +142,15 @@ const App = () => {
     </div>
   );
 
-  return (
-    <Provider store={store}>
-      <DataProvider>
-        <Router>
-          <Routers />
-        </Router>
-      </DataProvider>
-    </Provider>
-  );
+  // return (
+  //   <Provider store={store}>
+  //     <DataProvider>
+  //       <Router>
+  //         <Routers />
+  //       </Router>
+  //     </DataProvider>
+  //   </Provider>
+  // );
 };
 
 export default App;

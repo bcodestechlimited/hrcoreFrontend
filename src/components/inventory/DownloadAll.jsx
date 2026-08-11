@@ -16,9 +16,9 @@ const DownloadAll = () => {
   const handleIsDone = () => {
     setIsDone(!isDone);
   };
-  const closehandleIsDone = () => {
-    setIsDone(false);
-  };
+  // const closehandleIsDone = () => {
+  //   setIsDone(false);
+  // };
   return (
     <div className=" ">
       <button

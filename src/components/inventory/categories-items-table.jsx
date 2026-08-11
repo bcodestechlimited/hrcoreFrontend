@@ -4,28 +4,28 @@ import Delete from "../../assets/Delete.png";
 import { Link } from "react-router-dom";
 
 const CategoriesItemsTable = () => {
-  const [addItem, setAddItem] = useState(false);
-  const [addFilters, setAddFilters] = useState(false);
-  const [isDownload, setIsDownload] = useState(false);
+  // const [addItem, setAddItem] = useState(false);
+  // const [addFilters, setAddFilters] = useState(false);
+  // const [isDownload, setIsDownload] = useState(false);
   const [category, setCategory] = useState(false);
   const [isDone, setIsDone] = useState(false);
 
-  const handleAddItem = () => {
-    setAddItem(!addItem);
-  };
-  const closeHandleAddItem = () => {
-    setAddItem(false);
-  };
+  // const handleAddItem = () => {
+  //   setAddItem(!addItem);
+  // };
+  // const closeHandleAddItem = () => {
+  //   setAddItem(false);
+  // };
 
-  const handleAddFilters = () => {
-    setAddFilters(!addFilters);
-  };
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
-  const closeHandleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleAddFilters = () => {
+  //   setAddFilters(!addFilters);
+  // };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
+  // const closeHandleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
 
   const handleCategory = () => {
     setCategory(!category);
@@ -41,7 +41,7 @@ const CategoriesItemsTable = () => {
 
   const [isEdit, setIsEdit] = useState(false);
   const [isDelete, setIsDelete] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
+  // const [isSuccessful, setIsSuccessful] = useState(false);
   const [isDeletedSuccessfully, setIsDeletedSuccessfully] = useState(false);
 
   const handleDeletedSuccessfully = () => {
@@ -59,18 +59,18 @@ const CategoriesItemsTable = () => {
     window.scrollTo(0, 0);
     setIsDelete(!isDelete);
   };
-  const handleSuccessful = () => {
-    setIsSuccessful(!isSuccessful);
-  };
+  // const handleSuccessful = () => {
+  //   setIsSuccessful(!isSuccessful);
+  // };
   const closehandleEdit = () => {
     setIsEdit(false);
   };
   const closehandleDelete = () => {
     setIsDelete(false);
   };
-  const closehandleSuccessful = () => {
-    setIsSuccessful(false);
-  };
+  // const closehandleSuccessful = () => {
+  //   setIsSuccessful(false);
+  // };
 
   const tableHead = ["Service", "Price", "Action"],
     tableData = [

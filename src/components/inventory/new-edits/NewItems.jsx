@@ -5,19 +5,19 @@ const NewItems = () => {
   const navigate = useNavigate();
 
   const [category, setCategory] = useState(false);
-  const [addItem, setAddItem] = useState(false);
+  // const [addItem, setAddItem] = useState(false);
 
   const handleCategory = () => {
     setCategory(!category);
   };
 
-  const handleAddItem = () => {
-    setAddItem(!addItem);
-  };
+  // const handleAddItem = () => {
+  //   setAddItem(!addItem);
+  // };
 
-  const closeHandleAddItem = () => {
-    setAddItem(false);
-  };
+  // const closeHandleAddItem = () => {
+  //   setAddItem(false);
+  // };
 
   const handleCancel = () => {
     navigate(-1);

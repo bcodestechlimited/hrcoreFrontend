@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const DownloadSuccessful = () => {
-  const [isDownload, setIsDownload] = useState(false);
+  // const [isDownload, setIsDownload] = useState(false);
 
-  const [isCategory, setIsCategory] = useState(false);
+  // const [isCategory, setIsCategory] = useState(false);
 
-  const handleIsCategory = () => {
-    setIsCategory(!isCategory);
-  };
+  // const handleIsCategory = () => {
+  //   setIsCategory(!isCategory);
+  // };
 
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
-  const closeHandleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
+  // const closeHandleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
 
   return (
     <div>

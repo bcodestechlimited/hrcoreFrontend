@@ -1,19 +1,19 @@
-import { Input } from "postcss";
+// import { Input } from "postcss";
 import React, { useState } from "react";
-import MultiStep from "react-multistep";
+// import MultiStep from "react-multistep";
 
 const CreateJob = () => {
   const [form, setForm] = useState("1");
-  const steps = [
-    {
-      name: "Step1",
-      component: <Step1 />,
-    },
-    {
-      name: "Step2",
-      component: <Step2 />,
-    },
-  ];
+  // const steps = [
+  //   {
+  //     name: "Step1",
+  //     component: <Step1 />,
+  //   },
+  //   {
+  //     name: "Step2",
+  //     component: <Step2 />,
+  //   },
+  // ];
   
   return (
     <div>

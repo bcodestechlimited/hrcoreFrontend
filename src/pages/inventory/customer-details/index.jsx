@@ -5,8 +5,8 @@ import DownloadAll from "../../../components/inventory/DownloadAll";
 
 const CustomerDetails = () => {
   const [activeButton, setActiveButton] = useState("overview");
-  const [isDownload, setIsDownload] = useState(false);
-  const [isDone, setIsDone] = useState(false);
+  // const [isDownload, setIsDownload] = useState(false);
+  // const [isDone, setIsDone] = useState(false);
 
   const tableHead = [
       "Supplier Name",
@@ -72,17 +72,17 @@ const CustomerDetails = () => {
     setActiveButton(button);
   };
 
-  const handleIsDownload = () => {
-    setIsDownload(!isDownload);
-  };
+  // const handleIsDownload = () => {
+  //   setIsDownload(!isDownload);
+  // };
 
-  const handleIsDone = () => {
-    setIsDone(!isDone);
-  };
+  // const handleIsDone = () => {
+  //   setIsDone(!isDone);
+  // };
 
-  const closehandleIsDone = () => {
-    setIsDone(false);
-  };
+  // const closehandleIsDone = () => {
+  //   setIsDone(false);
+  // };
 
   const details = [
     {
