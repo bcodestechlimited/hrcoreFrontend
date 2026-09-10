@@ -16,6 +16,7 @@ import {
 import { ToWords } from "to-words";
 import Logo from "./assets/Cephas.png";
 
+
 // Preloader
 $(window).on("load", function () {
   $(".lds-ellipsis").fadeOut(); // will first fade out the loading animation
